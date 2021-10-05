@@ -1,0 +1,46 @@
+<html>
+<head>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js" type="text/javascript"></script>
+
+  <script src="https://d3js.org/d3.v5.min.js" type="text/javascript"></script>
+
+  <script src="https://unpkg.com/topojson@3" type="text/javascript"></script>
+
+  <script src="https://unpkg.com/d3-simple-slider" type="text/javascript"></script>
+
+
+  <script src="mySketch.js"  type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ 
+  <main>
+    <p><div id="text">Please Select your location, and click Submit to see the temperature trend</div></p>
+
+    <form id= "selection">
+      <label class="container"><input type="radio" id="NA" name="food1" value="food1" >NA
+        <span class="checkmark"></span>
+      </label>
+      
+      <label class="container">
+        <input type="radio" id="Asia" name="food1" value="food1">
+        Asia
+        <span class="checkmark"></span>
+      </label>
+
+      
+    </form>
+
+    <button type="button" id="comp">Submit!</button>
+    <button type="button" id="clear">Clear!</button>
+    <br>
+    <br>
+    <p id="value-week"> </p>
+    <div id="text">The slider x-axis represents the Year since 1910.</div><div id="text">The rectange is the average temperature-change compared to average temperature in 20 Century.<br>
+      Global warming.<br><br><br></div ><div></div><div></div>
+    </main>
+    
+  </body>
+
+  </html>
